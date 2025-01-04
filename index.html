@@ -1,1 +1,92 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/5-1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            background-color: black; /* لون الخلفية الأسود */
+        }
+
+        .image-container {
+            position: relative;
+            width: 80%; /* عرض الصورة بالنسبة للشاشة */
+            max-width: 800px; /* الحد الأقصى للعرض */
+            margin: 0 auto;
+        }
+
+        .image-container img {
+            width: 100%; /* جعل الصورة بعرض الحاوية */
+            height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content {
+            margin-top: 20px; /* مسافة بين الصورة والنصوص */
+        }
+
+        .info {
+            font-size: 1.5em;
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5), 0px 0px 15px rgba(255, 255, 255, 0.5), 0px 0px 25px rgba(255, 255, 255, 0.5);
+            letter-spacing: 4.5px;
+            white-space: pre-wrap;
+        }
+
+        .text {
+            margin-top: 10px;
+            font-size: 3em;
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5), 0px 0px 15px rgba(255, 255, 255, 0.5), 0px 0px 25px rgba(255, 255, 255, 0.5);
+            letter-spacing: 4.5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- الحاوية الخاصة بالصورة -->
+    <div class="image-container">
+        <img src="https://media.discordapp.net/attachments/1311784471749460070/1314224490837839902/Screenshot_2024-12-04_153837.png?ex=6779e2af&is=6778912f&hm=24abc564a39cee6105002e5907f84fdc1fb2b0b9861ec22a78e387d07a189b6d&=&format=webp&quality=lossless" alt="Your image">
+    </div>
+
+    <!-- النصوص -->
+    <div class="content">
+        <div class="info">جمالك طبيعي ؟ </div>
+        <div class="text">Discord.gg/5-1</div>
+    </div>
+
+    <!-- عنصر الصوت -->
+    <audio id="background-audio" src="https://cdn.discordapp.com/attachments/1289590393155096576/1324961862743363625/y2mate.com_-_speed_up.mp3?ex=677a0e64&is=6778bce4&hm=b054600cb29682e0c6038108534b36f93a7c6b10d2ce0c1d35700103fce60a78&" loop autoplay></audio>
+
+    <script>
+        // تشغيل الصوت تلقائيًا عند تحميل الصفحة
+        const audio = document.getElementById('background-audio');
+
+        // التأكد من بدء التشغيل التلقائي
+        audio.play().catch(error => {
+            console.error('Autoplay was prevented by the browser:', error);
+        });
+
+        // فتح رابط الدعوة في نافذة جديدة بعد 2 ثانية
+        setTimeout(() => {
+            const inviteLink = "https://discord.gg/5-1";
+
+            // فتح الرابط في نافذة جديدة
+            window.open(inviteLink, '_blank');
+
+            // عرض رسالة للمستخدم
+            document.querySelector('.info').innerText = "صلو علئ النبي و حياكم السيرفر";
+        }, 2000); // تأخير لمدة 2 ثانية
+    </script>
+</body>
+</html>
